@@ -143,7 +143,7 @@ async def askgpt(ctx,*,GPTquery):
 
 @bot.command()
 async def egg(ctx, args=None):
-  res = random.randrange(1,7)
+  res = random.randrange(1,8)
   if res == 1:
     await ctx.send("tacocat sus")
   elif res == 2:
@@ -156,6 +156,8 @@ async def egg(ctx, args=None):
     await ctx.send("did you know this bot is opensource > https://github.com/slammon/EzGPT")
   elif res == 6:
     await ctx.send(f"why did you choose the name {ctx.message.author} kinda weird")
+  elif res == 7:
+    await ctx.send("Long before time had a name, the First Spinjitzu Master created Ninjago using four elemental weapons. But when he passed, a dark presence sought out to collect them all: Lord Garmadon. So I, Sensei Wu, his brother, sought out to find four ninja to collect them first.")
 
 # / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /
 

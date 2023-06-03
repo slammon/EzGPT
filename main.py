@@ -158,7 +158,9 @@ async def egg(ctx, args=None):
     await ctx.send(f"why did you choose the name {ctx.message.author} kinda weird")
   elif res == 7:
     await ctx.send("Long before time had a name, the First Spinjitzu Master created Ninjago using four elemental weapons. But when he passed, a dark presence sought out to collect them all: Lord Garmadon. So I, Sensei Wu, his brother, sought out to find four ninja to collect them first.")
-
+  else :
+    await ctx.send("whoops")
+    
 # / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /
 
 def DALLEanswer(prompt, resolution):

@@ -141,22 +141,21 @@ async def askgpt(ctx,*,GPTquery):
 
 # / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /
 
-def egg_eval(prompt, author):
-  if prompt == 95:
-    return 'tacocat sus'
-  elif prompt == 3799:
-    return 'slammon unfunni'
-  elif prompt == 1001:
-    return f"imagine being named {author}"
-  elif prompt == 6:
-    return "mee6 moment"
-  else:
-    return 'Cuh?'
-
 @bot.command()
-async def eggster(ctx, eggnumb: int):
-  egg = egg_eval(eggnumb, ctx.message.author)
-  await ctx.send(egg)
+async def egg(ctx, args=None):
+  res = random.randrange(1,7)
+  if res == 1:
+    await ctx.send("tacocat sus")
+  elif res == 2:
+    await ctx.send("slammon unfunni")
+  elif res == 3:
+    await ctx.send(f"imagine being named {ctx.message.author}")
+  elif res == 4:
+    await ctx.send("Mee6 sucks")
+  elif res == 5:
+    await ctx.send("did you know this bot is opensource > https://github.com/slammon/EzGPT")
+  elif res == 6:
+    await ctx.send(f"why did you choose the name {ctx.message.author} kinda weird")
 
 # / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /
 
